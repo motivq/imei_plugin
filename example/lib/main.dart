@@ -31,9 +31,10 @@ class _MyAppState extends State<MyApp> {
           await ImeiPlugin.getImei(shouldShowRequestPermissionRationale: false);
       List<String>? multiImei = await ImeiPlugin.getImeiMulti();
       print(multiImei);
-      idunique = await ImeiPlugin.getId();
+      idunique = (await ImeiPlugin.getId())!;
     } on PlatformException {
       platformImei = 'Failed to get platform version.';
+      idunique = 'Failed to get platform version.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -55,7 +56,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformImei\n is equal to : $uniqueId'),
+          child: Text('Device Unique ID: $uniqueId\n Device Unique IMEI: $_platformImei'),
         ),
       ),
     );
