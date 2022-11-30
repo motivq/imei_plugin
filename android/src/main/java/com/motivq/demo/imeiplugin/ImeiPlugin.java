@@ -1,4 +1,4 @@
-package com.rioapp.demo.imeiplugin;
+package com.motivq.demo.imeiplugin;
 
 import android.Manifest;
 import android.app.Activity;
