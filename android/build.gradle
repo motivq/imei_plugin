@@ -1,4 +1,4 @@
-group 'com.rioapp.demo.imeiplugin'
+group 'com.motivq.demo.imeiplugin'
 version '1.0-SNAPSHOT'
 
 buildscript {

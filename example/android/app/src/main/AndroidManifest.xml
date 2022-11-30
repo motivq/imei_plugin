@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rioapp.demo.imeipluginexample">
+    package="com.motivq.demo.imeipluginexample">
     <application
         android:label="imei_plugin_example"
         android:icon="@mipmap/ic_launcher">
